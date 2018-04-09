@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+/*--- Below code affects all the tabs */
+.tabs {
+    position:relative;
+    text-align: center;
+	margin-bottom:5cm;
+    }
+ 
+.tabs li {
+  display: inline;  /*--- This code allows us to put all the tab in same (horizental) line */
+  color: black; 
+  font-family: Verdana;
+    }
+ 
+/*--- Below code allows us to remove the radio button 0 from each of the tab */
+.tabs li > input{
+    display:none;
+        }
+ 
+ 
+.tabs li > label {
+    display: inline-block; 
+    padding:30px; /*--- This code changes the spaces between the labels within the TABS - if you want more spaces between tabs, put higher number */
+    cursor:pointer;
+    color: black;/*--- This code changes the font color of the labels within TABS  */
+         }
+ 
+ 
+.tabs .tab-content{
+    display:none;
+    position:absolute;
+    text-align:center;
+	overflow-y: hidden;
+	margin-left: 12cm;
+	margin-right: 15cm;
+}
+
+
+ 
+/*--- Instead of just color in the code below, we can do background-color:#5BC85B, to get background green box (instead of just text
+green) when tab is selected*/
+ 
+.tabs li> input:checked + label {
+    color:#0BE195;
+}
+ 
+/*--- It makes sure paragraph within each tab is there*/   
+.tabs li > input:checked ~ .tab-content {
+    display:block;
+}   
+ 
+.h1 a img{
+	margin-top:0cm;
+}
+
+.h1 a img:hover{
+	opacity: 0.5;
+	color:#0BE195;
+}
+
+
+.socialicons {
+	position: absolute;
+	left:10px;
+	bottom:0px;
+	width:98%;
+}
+
+.socialicons a img{
+	width:45px;
+	bottom:5px;
+	float: border-width;
+	position: static;
+	
+}
+
+.socialicons a img:hover{
+	opacity: .2;
+}
+
+
+
+
+
